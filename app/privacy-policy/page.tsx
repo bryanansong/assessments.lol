@@ -49,7 +49,7 @@ const PrivacyPolicy = () => {
           </svg>{" "}
           Back
         </Link>
-        <h1 className="text-3xl font-extrabold pb-6">
+        <h1 className="pb-6 text-3xl font-extrabold">
           Privacy Policy for {config.appName}
         </h1>
 
@@ -57,51 +57,59 @@ const PrivacyPolicy = () => {
           className="leading-relaxed whitespace-pre-wrap"
           style={{ fontFamily: "sans-serif" }}
         >
-          {`Last Updated: 2023-08-25
+          {`
+Last Updated: November 5, 2024
 
-Thank you for visiting ShipFast ("we," "us," or "our"). This Privacy Policy outlines how we collect, use, and protect your personal and non-personal information when you use our website located at https://shipfa.st (the "Website").
+1. Introduction
+Welcome to Assessments (https://assessments.lol). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform for sharing anonymous, crowdsourced data about technical assessments at top companies.
 
-By accessing or using the Website, you agree to the terms of this Privacy Policy. If you do not agree with the practices described in this policy, please do not use the Website.
+2. Information We Collect
+Personal Data:
+- Name
+- Email address
 
-1. Information We Collect
+Non-Personal Data:
+- Web cookies for site functionality and user experience
 
-1.1 Personal Data
+3. How We Use Your Information
+We use the collected information to:
+- Provide and maintain our services
+- Notify you about changes to our platform
+- Provide customer support
+- Monitor platform usage
+- Improve user experience
 
-We collect the following personal information from you:
+4. Data Sharing and Disclosure
+We do not share your personal information with any third parties. Your data is used solely for the purposes described in this Privacy Policy.
 
-Name: We collect your name to personalize your experience and communicate with you effectively.
-Email: We collect your email address to send you important information regarding your orders, updates, and communication.
-Payment Information: We collect payment details to process your orders securely. However, we do not store your payment information on our servers. Payments are processed by trusted third-party payment processors.
+5. Data Security
+We implement appropriate technical and organizational measures to maintain the security of your personal information.
 
-1.2 Non-Personal Data
+6. Cookies
+We use cookies to enhance your browsing experience. You may choose to disable cookies through your browser settings, though this may affect site functionality.
 
-We may use web cookies and similar technologies to collect non-personal information such as your IP address, browser type, device information, and browsing patterns. This information helps us to enhance your browsing experience, analyze trends, and improve our services.
+7. Children's Privacy
+We do not knowingly collect or maintain information from persons under 13 years of age. If we learn that personal information of persons under 13 has been collected, we will take appropriate steps to delete this information.
 
-2. Purpose of Data Collection
+8. Changes to This Privacy Policy
+If we make material changes to this Privacy Policy, we will notify you via email. Your continued use of the platform after such modifications constitutes your acknowledgment of the modified Privacy Policy.
 
-We collect and use your personal data for the sole purpose of order processing. This includes processing your orders, sending order confirmations, providing customer support, and keeping you updated about the status of your orders.
+9. Contact Us
+If you have questions about this Privacy Policy, please contact us at:
+Email: bryan@assessments.lol
 
-3. Data Sharing
+10. Your Rights
+You have the right to:
+- Access your personal information
+- Correct inaccurate data
+- Request deletion of your data
+- Opt-out of communications
 
-We do not share your personal data with any third parties except as required for order processing (e.g., sharing your information with payment processors). We do not sell, trade, or rent your personal information to others.
+11. Data Retention
+We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy.
 
-4. Children's Privacy
-
-ShipFast is not intended for children under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us at the email address provided below.
-
-5. Updates to the Privacy Policy
-
-We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any updates will be posted on this page, and we may notify you via email about significant changes.
-
-6. Contact Information
-
-If you have any questions, concerns, or requests related to this Privacy Policy, you can contact us at:
-
-Email: marc@shipfa.st
-
-For all other inquiries, please visit our Contact Us page on the Website.
-
-By using ShipFast, you consent to the terms of this Privacy Policy.`}
+12. Governing Law
+This Privacy Policy is governed by and construed in accordance with applicable privacy laws and regulations.`}
         </pre>
       </div>
     </main>

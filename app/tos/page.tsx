@@ -49,7 +49,7 @@ const TOS = () => {
           </svg>
           Back
         </Link>
-        <h1 className="text-3xl font-extrabold pb-6">
+        <h1 className="pb-6 text-3xl font-extrabold">
           Terms and Conditions for {config.appName}
         </h1>
 
@@ -57,39 +57,41 @@ const TOS = () => {
           className="leading-relaxed whitespace-pre-wrap"
           style={{ fontFamily: "sans-serif" }}
         >
-          {`Last Updated: September 26, 2023
+          {`Effective Date: November 4, 2024
 
-Welcome to ShipFast!
+Welcome to Assessments (https://assessments.lol). By accessing or using our website, you agree to be bound by these Terms & Services. If you do not agree, please do not use our site.
 
-These Terms of Service ("Terms") govern your use of the ShipFast website at https://shipfa.st ("Website") and the services provided by ShipFast. By using our Website and services, you agree to these Terms.
+1. Acceptance of Terms
+By using this site, you agree to comply with and be bound by these Terms & Services and our Privacy Policy (https://assessments.lol/privacy-policy).
 
-1. Description of ShipFast
+2. User Accounts
+To access certain features, you may be required to create an account and provide your name and email. You are responsible for keeping your account information confidential and for all activities that occur under your account.
 
-ShipFast is a platform that offers a JavaScript code boilerplate to assist entrepreneurs in launching their startups more efficiently.
+3. User Conduct
+You agree to use our site responsibly and not to:
+- Submit false or misleading data.
+- Engage in unauthorized collection or sharing of data.
+- Use the site for illegal purposes.
 
-2. Ownership and Usage Rights
+4. Data Collection
+We collect user data, including name and email, as well as non-personal data through web cookies. For more information, refer to our Privacy Policy (https://assessments.lol/privacy-policy).
 
-When you purchase a package from ShipFast, you gain the right to download and use the code provided for creating applications. You own the code you create but do not have the right to resell it. We offer a full refund within 7 days of purchase, as specified in our refund policy.
+5. Intellectual Property
+All content on this site is the property of Assessments and is protected by applicable intellectual property laws. You may not use, reproduce, or distribute any content without our permission.
 
-3. User Data and Privacy
+6. Disclaimers and Limitation of Liability
+Assessments is provided "as is" without warranties of any kind. We do not guarantee the accuracy or reliability of data shared on the site. Assessments is not liable for any damages arising from your use of the site.
 
-We collect and store user data, including name, email, and payment information, as necessary to provide our services. For details on how we handle your data, please refer to our Privacy Policy at https://shipfa.st/privacy-policy.
+7. Governing Law
+These Terms & Services are governed by the laws of the USA. Any disputes will be resolved under the exclusive jurisdiction of the courts in the USA.
 
-4. Non-Personal Data Collection
+8. Changes to Terms
+We may update these Terms & Services from time to time. Users will be notified of any changes via email.
 
-We use web cookies to collect non-personal data for the purpose of improving our services and user experience.
+9. Contact Us
+For any questions or concerns, please contact us at bryan@assessments.lol.
 
-5. Governing Law
-
-These Terms are governed by the laws of France.
-
-6. Updates to the Terms
-
-We may update these Terms from time to time. Users will be notified of any changes via email.
-
-For any questions or concerns regarding these Terms of Service, please contact us at marc@shipfa.st.
-
-Thank you for using ShipFast!`}
+By using Assessments, you agree to these Terms & Services.`}
         </pre>
       </div>
     </main>

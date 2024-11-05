@@ -7,7 +7,7 @@ const avatars: {
   {
     alt: "User",
     // Ideally, load from a statically generated image for better SEO performance (import userImage from "@/public/userImage.png")
-    src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3276&q=80",
+    src: "https://images.pexels.com/photos/19753269/pexels-photo-19753269/free-photo-of-portrait-of-a-young-bearded-man-in-a-black-t-shirt-standing-outside.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
   },
   {
     alt: "User",
@@ -15,25 +15,25 @@ const avatars: {
   },
   {
     alt: "User",
-    src: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+    src: "https://images.pexels.com/photos/5674943/pexels-photo-5674943.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
   },
   {
     alt: "User",
-    src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+    src: "https://images.pexels.com/photos/15894901/pexels-photo-15894901/free-photo-of-man-with-mustache-and-beard.png?auto=compress&cs=tinysrgb&w=600&lazy=load",
   },
   {
     alt: "User",
-    src: "https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3376&q=80",
+    src: "https://images.pexels.com/photos/7138256/pexels-photo-7138256.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
   },
 ];
 
 const TestimonialsAvatars = ({ priority }: { priority?: boolean }) => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-3">
+    <div className="flex flex-col items-center justify-center gap-3 md:flex-row md:items-start">
       {/* AVATARS */}
       <div className={`-space-x-5 avatar-group justy-start`}>
         {avatars.map((image, i) => (
-          <div className="avatar w-12 h-12" key={i}>
+          <div className="w-12 h-12 avatar" key={i}>
             <Image
               src={image.src}
               alt={image.alt}
@@ -46,7 +46,7 @@ const TestimonialsAvatars = ({ priority }: { priority?: boolean }) => {
       </div>
 
       {/* RATING */}
-      <div className="flex flex-col justify-center items-center md:items-start gap-1">
+      <div className="flex flex-col items-center justify-center gap-1 md:items-start">
         <div className="rating">
           {[...Array(5)].map((_, i) => (
             <svg
@@ -66,8 +66,7 @@ const TestimonialsAvatars = ({ priority }: { priority?: boolean }) => {
         </div>
 
         <div className="text-base text-base-content/80">
-          <span className="font-semibold text-base-content">32</span> makers
-          ship faster
+          <span className="font-semibold text-base-content">21</span> candidates applied smarter
         </div>
       </div>
     </div>

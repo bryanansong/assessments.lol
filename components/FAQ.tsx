@@ -13,22 +13,24 @@ interface FAQItemProps {
 
 const faqList: FAQItemProps[] = [
   {
-    question: "What do I get exactly?",
-    answer: <div className="space-y-2 leading-relaxed">Loreum Ipseum</div>,
+    question: "Is my submission really anonymous?",
+    answer: <div className="space-y-2 leading-relaxed">Absolutely! We never reveal personally identifiable information with submissions. We only store the assessment details, scores, and outcomes to help other candidates.</div>,
   },
   {
-    question: "Can I get a refund?",
+    question: "What if my score is below average?",
     answer: (
       <p>
-        Yes! You can request a refund within 7 days of your purchase. Reach out
-        by email.
+        Every submission is valuable! Lower scores and different 
+        experiences help create a complete picture of the assessment 
+        landscape. This information is crucial for other candidates 
+        to understand the full range of outcomes and prepare accordingly.
       </p>
     ),
   },
   {
-    question: "I have another question",
+    question: "How recent is the assessment data?",
     answer: (
-      <div className="space-y-2 leading-relaxed">Cool, contact us by email</div>
+      <div className="space-y-2 leading-relaxed">All submissions display their submission date, and you can filter by date range. We ensure the information remains relevant to current assessment practices.</div>
     ),
   },
 ];
@@ -40,7 +42,7 @@ const FaqItem = ({ item }: { item: FAQItemProps }) => {
   return (
     <li>
       <button
-        className="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10"
+        className="relative flex items-center w-full gap-2 py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10"
         onClick={(e) => {
           e.preventDefault();
           setIsOpen(!isOpen);
@@ -96,10 +98,10 @@ const FaqItem = ({ item }: { item: FAQItemProps }) => {
 const FAQ = () => {
   return (
     <section className="bg-base-200" id="faq">
-      <div className="py-24 px-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
+      <div className="flex flex-col gap-12 px-8 py-24 mx-auto max-w-7xl md:flex-row">
         <div className="flex flex-col text-left basis-1/2">
-          <p className="inline-block font-semibold text-primary mb-4">FAQ</p>
-          <p className="sm:text-4xl text-3xl font-extrabold text-base-content">
+          <p className="inline-block mb-4 font-semibold text-primary">FAQ</p>
+          <p className="text-3xl font-extrabold sm:text-4xl text-base-content">
             Frequently Asked Questions
           </p>
         </div>
