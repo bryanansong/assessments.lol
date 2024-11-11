@@ -13,14 +13,14 @@ const links: {
   href: string;
   label: string;
 }[] = [
-  {
-    href: "/#pricing",
-    label: "Pricing",
-  },
-  {
-    href: "/#testimonials",
-    label: "Reviews",
-  },
+  // {
+  //   href: "/#pricing",
+  //   label: "Pricing",
+  // },
+  // {
+  //   href: "/#testimonials",
+  //   label: "Reviews",
+  // },
   {
     href: "/#faq",
     label: "FAQ",
@@ -62,7 +62,7 @@ const Header = () => {
               width={32}
               height={32}
             />
-            <span className="font-extrabold text-lg">{config.appName}</span>
+            <span className="text-lg font-extrabold">{config.appName}</span>
           </Link>
         </div>
         {/* Burger button to open menu on mobile */}
@@ -129,7 +129,7 @@ const Header = () => {
                 width={32}
                 height={32}
               />
-              <span className="font-extrabold text-lg">{config.appName}</span>
+              <span className="text-lg font-extrabold">{config.appName}</span>
             </Link>
             <button
               type="button"
@@ -157,7 +157,7 @@ const Header = () => {
           {/* Your links on small screens */}
           <div className="flow-root mt-6">
             <div className="py-4">
-              <div className="flex flex-col gap-y-4 items-start">
+              <div className="flex flex-col items-start gap-y-4">
                 {links.map((link) => (
                   <Link
                     href={link.href}

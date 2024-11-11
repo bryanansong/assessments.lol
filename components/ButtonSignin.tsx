@@ -48,7 +48,7 @@ const ButtonSignin = ({
             height={24}
           />
         ) : (
-          <span className="w-6 h-6 bg-base-300 flex justify-center items-center rounded-full shrink-0">
+          <span className="flex items-center justify-center w-6 h-6 rounded-full bg-base-300 shrink-0">
             {user?.user_metadata?.name?.charAt(0) || user?.email?.charAt(0)}
           </span>
         )}
@@ -60,9 +60,11 @@ const ButtonSignin = ({
   return (
     <Link
       className={`btn ${extraStyle ? extraStyle : ""}`}
-      href={config.auth.loginUrl}
+      // href={config.auth.loginUrl}
+      href={"/"}
     >
-      {text}
+      {/* {text} */}
+      Coming soon
     </Link>
   );
 };
