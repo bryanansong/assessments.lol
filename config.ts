@@ -8,7 +8,7 @@ const config = {
   appDescription:
     "A platform for sharing anonymous, crowdsourced data about technical assessments at top companies. Share your experience, compare scores, and approach your next assessment with confidence.",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
-  domainName: "shipfa.st",
+  domainName: "assessments.lol",
   crisp: {
     // Crisp website ID. IF YOU DON'T USE CRISP: just remove this => Then add a support email in this config file (mailgun.supportEmail) otherwise customer support won't work.
     id: "",
