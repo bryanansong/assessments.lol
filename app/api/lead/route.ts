@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
 	  
 	  Stay awesome,
 	  The assessments.lol crew`;
-	  
+
 	const html = `
 		  <div style="max-width: 600px; margin: 0 auto; font-family: Arial, sans-serif;">
 			<h2 style="color: #333;">Hey there! </h2>
