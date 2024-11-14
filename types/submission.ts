@@ -1,3 +1,5 @@
+import { Platform, RoleType, SubmissionStatus } from "./enums";
+
 export interface SubmissionRequest {
     companyId: string;
     roleType: RoleType;
