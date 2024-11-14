@@ -4,15 +4,15 @@ const nextConfig = {
   images: {
     remotePatterns: [
       // NextJS <Image> component needs to whitelist domains for src={}
-      {hostname:"images.pexels.com"},
-      {hostname: "lh3.googleusercontent.com"},
-      {hostname: "pbs.twimg.com"},
-      {hostname: "images.unsplash.com"},
-      {hostname: "logos-world.net"},
+      { hostname: "images.pexels.com" },
+      { hostname: "lh3.googleusercontent.com" },
+      { hostname: "pbs.twimg.com" },
+      { hostname: "images.unsplash.com" },
+      { hostname: "logos-world.net" },
     ],
   },
-  async headers() { 
-    return {
+  async headers() {
+    return [{
       source: "/(.*)",
       headers: [
         {
@@ -32,7 +32,7 @@ const nextConfig = {
           value: "strict-origin-when-cross-origin",
         },
       ],
-    };
+    },]
   }
 };
 
