@@ -31,7 +31,7 @@ const ButtonPopoverCategories = () => {
       {({ open }) => (
         <>
           <Popover.Button
-            className="link no-underline flex flex-nowrap items-center gap-1 text-base-content/80 hover:text-base-content active:text-base-content focus:text-base-content duration-100"
+            className="flex items-center gap-1 no-underline duration-100 link flex-nowrap text-base-content/80 hover:text-base-content active:text-base-content focus:text-base-content"
             title="Open Blog categories"
           >
             Categories
@@ -58,14 +58,14 @@ const ButtonPopoverCategories = () => {
             leaveFrom="transform scale-100 opacity-100"
             leaveTo="transform scale-95 opacity-0"
           >
-            <Popover.Panel className="absolute left-0 z-30 mt-3 w-screen max-w-full sm:max-w-sm transform">
+            <Popover.Panel className="absolute left-0 z-30 w-screen max-w-full mt-3 transform sm:max-w-sm">
               {({ close }) => (
-                <div className="overflow-hidden rounded-box shadow-lg ring-1 ring-base-content ring-opacity-5">
-                  <div className="relative grid gap-2 bg-base-100 p-2 overflow-hidden">
+                <div className="overflow-hidden shadow-lg rounded-box ring-1 ring-base-content ring-opacity-5">
+                  <div className="relative grid gap-2 p-2 overflow-hidden bg-base-100">
                     {categories.map((category) => (
                       <div key={category.slug} onClick={() => close()}>
                         <Link
-                          className="block text-left p-3 -m-1 cursor-pointer hover:bg-base-200 rounded-box duration-200"
+                          className="block p-3 -m-1 text-left duration-200 cursor-pointer hover:bg-base-200 rounded-box"
                           href={`/blog/category/${category.slug}`}
                         >
                           <div className="">
@@ -103,7 +103,7 @@ const ButtonAccordionCategories = () => {
         }}
         aria-expanded={isOpen}
         type="button"
-        className="link no-underline flex justify-between items-center w-full "
+        className="flex items-center justify-between w-full no-underline link "
       >
         Categories
         <svg
@@ -128,7 +128,7 @@ const ButtonAccordionCategories = () => {
             <li key={category.slug}>
               <Link
                 href={`/blog/category/${category.slug}`}
-                className="text-base-content/80 hover:text-base-content duration-100 link link-hover"
+                className="duration-100 text-base-content/80 hover:text-base-content link link-hover"
               >
                 {category?.titleShort || category.title}
               </Link>
@@ -154,7 +154,7 @@ const HeaderBlog = () => {
 
   return (
     <header className="bg-base-200">
-      <nav className="max-w-7xl flex items-center justify-between px-8 py-3 mx-auto">
+      <nav className="flex items-center justify-between px-8 py-3 mx-auto max-w-7xl">
         {/* Your logo/name on large screens */}
         <div className="flex lg:flex-1">
           <Link
@@ -170,7 +170,7 @@ const HeaderBlog = () => {
               width={32}
               height={32}
             />
-            <span className="font-extrabold text-lg">{config.appName}</span>
+            <span className="text-lg font-extrabold">{config.appName}</span>
           </Link>
         </div>
         {/* Burger button to open menu on mobile */}
@@ -204,7 +204,7 @@ const HeaderBlog = () => {
             <Link
               href={link.href}
               key={link.href}
-              className="link link-hover text-base-content/80 hover:text-base-content active:text-base-content focus:text-base-content duration-100"
+              className="duration-100 link link-hover text-base-content/80 hover:text-base-content active:text-base-content focus:text-base-content"
               title={link.label}
             >
               {link.label}
@@ -234,12 +234,11 @@ const HeaderBlog = () => {
                 src={logo}
                 alt={`${config.appName} logo`}
                 className="w-8"
-                placeholder="blur"
                 priority={true}
                 width={32}
                 height={32}
               />
-              <span className="font-extrabold text-lg">{config.appName}</span>
+              <span className="text-lg font-extrabold">{config.appName}</span>
             </Link>
             <button
               type="button"
@@ -267,7 +266,7 @@ const HeaderBlog = () => {
           {/* Your links on small screens */}
           <div className="flow-root mt-6">
             <div className="py-4">
-              <div className="flex flex-col gap-y-4 items-start">
+              <div className="flex flex-col items-start gap-y-4">
                 {links.map((link) => (
                   <Link
                     href={link.href}
