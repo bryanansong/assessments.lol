@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@/libs/supabase/server";
-import { SubmissionRequest } from "@/types";
+import { SubmissionRequest, PLATFORMS, ROLE_TYPES, SUBMISSION_STATUSES } from "@/types";
 
 export async function POST(req: NextRequest) {
   try {

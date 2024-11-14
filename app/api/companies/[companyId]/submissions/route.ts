@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@/libs/supabase/server";
+import { Platform, RoleType, SubmissionStatus, PLATFORMS, ROLE_TYPES, SUBMISSION_STATUSES } from "@/types";
 
 export async function GET(
   req: NextRequest,
