@@ -60,11 +60,11 @@ const ButtonSignin = ({
   return (
     <Link
       className={`btn ${extraStyle ? extraStyle : ""}`}
-      // href={config.auth.loginUrl}
-      href={"/"}
+      href={config.auth.loginUrl}
     >
-      {/* {text} */}
-      Coming soon
+      {/* //TODO: comment this out when going to production */}
+      {text}
+      {/* Coming soon */}
     </Link>
   );
 };

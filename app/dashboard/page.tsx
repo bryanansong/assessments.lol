@@ -1,4 +1,4 @@
-import ButtonAccount from "@/components/ButtonAccount";
+import ButtonAccount from "@/shipfast-components/ButtonAccount";
 
 export const dynamic = "force-dynamic";
 
