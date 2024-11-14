@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import { Inter } from "next/font/google";
 import { Viewport } from "next";
 import { getSEOTags } from "@/libs/seo";
-import ClientLayout from "@/shipfast-components/LayoutClient";
+import ClientLayout from "@/components/shipfast-components/LayoutClient";
 import config from "@/config";
 import "./globals.css";
 import { CSPostHogProvider } from '@/libs/posthog'

@@ -9,7 +9,7 @@ import Image from "next/image";
 import logo from "@/app/icon.png";
 import config from "@/config";
 import { categories } from "../content";
-import ButtonSignin from "@/shipfast-components/ButtonSignin";
+import ButtonSignin from "@/components/shipfast-components/ButtonSignin";
 
 const links: {
   href: string;
